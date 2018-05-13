@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSRF Protection</title>
+    <title>CSRF Protection!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <!-- navbar start -->
-
-    <!-- navbae end -->
-
+  <body style="background-image: url('/2-csrf-protection-synchronizer-token-pattern/background-1.jpg');color: white;">
+    
     <!--login form start -->
     <div class="container">
       <div class="row" align="center" style="padding-top: 100px;">
         <div class="col-12">
           <div class="card">
-            <h5 class="card-header">Login</h5>
+            <h3 class="card-header">- Login -</h3>
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-2"></div>
@@ -96,7 +93,7 @@
 		}
 		else
 		{
-			echo "<script>alert('Invalid login, Please try again.')</script>";
+			echo "<script>alert('Invalid login! Please try again!!')</script>";
 		}
 
 

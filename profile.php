@@ -8,7 +8,9 @@
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
   </head>
-  <body>
+
+  <body style="background-image: url('/2-csrf-protection-synchronizer-token-pattern/background-1.jpg');color: white;">
+
     <!-- navbar start -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -41,7 +43,7 @@
         <div class="col-12">
 
             <div class="card">
-              <h3 class="card-header">-Update Your Profile-</h3>
+              <h3 class="card-header">- Update Your Profile -</h3>
               <div class="card-body">
                     <div class="row">
                         <div class="col-sm-2"></div>
@@ -50,7 +52,7 @@
 
                 <?php if(isset($_COOKIE['session_cookie'])) {
                 echo "
-						<form action='csrf-validate.php' method='POST' enctype='multipart/form-data'>
+						<form action='validate.php' method='POST' enctype='multipart/form-data'>
                             	<!-- CSRF Token -->
                             	<input type='hidden' name='csrf_Token' id='csrf_Token' value=''>
                                 <!--  -->
@@ -92,7 +94,7 @@
 
 						var request="true";
 						$.ajax({
-						url:"csrf-gen.php",
+						url:"gen.php",
 						method:"POST",
 						data:{request:request},
 						dataType:"JSON",
